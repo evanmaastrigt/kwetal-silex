@@ -1,7 +1,9 @@
 {
     "require": {
         "php": ">=5.5.0",
+        "doctrine/dbal": "2.2.*",
         "igorw/config-service-provider": "1.2.*",
+        "marcojanssen/silex-service-register-provider": "1.1.*",
         "silex/silex": "~1.2"
     },
     "require-dev": {

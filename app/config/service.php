@@ -1,2 +1,8 @@
 <?php
-return [];
+return [
+    'config.providers' => [
+        'doctrineDbal' => [
+            'class' => 'Silex\Provider\DoctrineServiceProvider'
+        ],
+    ]
+];
