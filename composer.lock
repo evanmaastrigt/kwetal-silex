@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c81bccc6cb2308ff88a24cda3cabdc2f",
+    "hash": "e2330f5c60a1681a0e30caca9d0c6a05",
     "packages": [
         {
             "name": "doctrine/common",
@@ -186,6 +186,54 @@
                 "silex"
             ],
             "time": "2014-07-06 10:59:11"
+        },
+        {
+            "name": "marcojanssen/silex-routing-service-provider",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marcojanssen/silex-routing-service-provider.git",
+                "reference": "c84bcadf6c4eeda7cd915b4ce9189a3fad45cbf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marcojanssen/silex-routing-service-provider/zipball/c84bcadf6c4eeda7cd915b4ce9189a3fad45cbf4",
+                "reference": "c84bcadf6c4eeda7cd915b4ce9189a3fad45cbf4",
+                "shasum": ""
+            },
+            "require": {
+                "silex/silex": "1.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "igorw/config-service-provider": "Allows registering providers with configuration"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MJanssen\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Janssen",
+                    "email": "dev@marcojanssen.net"
+                }
+            ],
+            "description": "Silex provider for adding routes",
+            "keywords": [
+                "provider",
+                "route",
+                "routing",
+                "silex"
+            ],
+            "time": "2013-12-30 14:39:42"
         },
         {
             "name": "marcojanssen/silex-service-register-provider",
