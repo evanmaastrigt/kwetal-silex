@@ -22,6 +22,9 @@ $app->register(
     new ServiceRegisterProvider()
 );
 
+$app['twig.loader.filesystem']->addPath(realpath(__DIR__ . '/../src/Resource/view/frontend'), 'twigFrontendTemplates');
+$app['twig.loader.filesystem']->addPath(realpath(__DIR__ . '/../src/Resource/view/backend'), 'twigBackendTemplates');
+
 //$app->register(
 //    new RoutingServiceProvider(__DIR__ . "/../app/config/route.php")
 //);
