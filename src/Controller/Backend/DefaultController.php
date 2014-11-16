@@ -3,11 +3,12 @@
 namespace Kwetal\Silex\Controller\Backend;
 
 use Symfony\Component\HttpFoundation\Request;
+use Silex\Application;
 
 class DefaultController
 {
-    public function defaultAction(Request $request)
+    public function defaultAction(Request $request, Application $app)
     {
-        return 'Hello Backend World!';
+        return $app['twig']->render('@twigBackendTemplates/index.twig', ['name' => 'Twig Backend Template']);
     }
 }
