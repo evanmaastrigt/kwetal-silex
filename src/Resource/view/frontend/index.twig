@@ -1,0 +1,30 @@
+{% extends "@twigFrontendTemplates/layout.twig" %}
+
+{% block content %}
+    <!-- frontend/index.twig::content -->
+    <div class="row">
+        <div class="col-md-9" id="an-empty-method" role="main">
+            <h2>An Empty Method</h2>
+            <p>
+                <pre>
+                /* Onderstaande method wordt standaard ingesteld als
+                *  er geen method is gekozen bij bv een nieuwe cron
+                */
+                protected function empty_method() {
+
+                }
+                </pre>
+            </p>
+            <p>
+                Makes perfect sense...
+            </p>
+        </div>
+        <div class="col-md-3">
+            <ul class="nav">
+                <li>
+                    <a href="#an-empty-method">An Empty Method</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
