@@ -1,9 +1,11 @@
 {
     "require": {
         "php": ">=5.5.0",
-        "doctrine/dbal": "2.2.*",
-        "igorw/config-service-provider": "1.2.*",
-        "silex/silex": "~1.2",
+        "dflydev/doctrine-orm-service-provider": "1.0.4",
+        "doctrine/data-fixtures": "1.0.*",
+        "doctrine/dbal": "2.3.*",
+        "silex/silex": "1.1.*",
+        "symfony/console": "2.*",
         "symfony/twig-bridge": "~2.3",
         "twig/twig": ">=1.8,<2.0-dev"
     },

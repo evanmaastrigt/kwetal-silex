@@ -2,7 +2,7 @@
 
 $app->register(
     new Silex\Provider\DoctrineServiceProvider(),
-    ['db.ptions' => [
+    ['db.options' => [
         'driver' => 'pdo_mysql',
         'host' => 'localhost',
         'dbname' => 'silex',
