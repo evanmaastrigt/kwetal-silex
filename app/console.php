@@ -6,6 +6,7 @@ use Symfony\Component\Console\Helper\HelperSet;
 use Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper;
 use Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Kwetal\Silex\Command\DataFixturesCommand;
 
 chdir(dirname(__DIR__));
 
@@ -15,6 +16,7 @@ $cli = true;
 $console = new ConsoleApplication('Silex', '1.0');
 
 $commands = [];
+$commands[] = new DataFixturesCommand();
 
 $console->addCommands($commands);
 

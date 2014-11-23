@@ -6,8 +6,8 @@ $app->register(
         'driver' => 'pdo_mysql',
         'host' => 'localhost',
         'dbname' => 'silex',
-        'user' => 'root',
-        'password' => 'root',
+        'user' => '',
+        'password' => '',
         'charset' => 'utf8',
     ],
     ]);
