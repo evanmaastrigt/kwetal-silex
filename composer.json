@@ -7,6 +7,7 @@
         "silex/silex": "1.1.*",
         "symfony/console": "2.*",
         "symfony/framework-bundle": "~2.2",
+        "symfony/security": "~2.3",
         "symfony/twig-bridge": "~2.3",
         "twig/twig": ">=1.8,<2.0-dev"
     },

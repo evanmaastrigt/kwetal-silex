@@ -14,8 +14,14 @@ class LoadUserData implements FixtureInterface
 
         $user = new User();
         $user->setUsername('admin');
-        $user->setPassword('xyzP@123');
-        $user->setRoles('ROLE_ADMIN,ROLE_USER');
+        $user->setPassword('5FZ2Z8QIkA7UTZ4BYkoC+GsReLf569mSKDsfods6LYQ8t+a8EW9oaircfMpmaLbPBh4FOBiiFyLfuZmTSUwzZg==');
+        $user->setRoles('ROLE_ADMIN');
+        $users[] = $user;
+
+        $user = new User();
+        $user->setUsername('edwin');
+        $user->setPassword('5FZ2Z8QIkA7UTZ4BYkoC+GsReLf569mSKDsfods6LYQ8t+a8EW9oaircfMpmaLbPBh4FOBiiFyLfuZmTSUwzZg==');
+        $user->setRoles('ROLE_USER');
         $users[] = $user;
 
         foreach ($users as $user) {
