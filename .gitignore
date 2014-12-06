@@ -1,4 +1,9 @@
 .idea
 vendor
-app/cache/*
+
+app/cache/doctrine/*
+!app/cache/doctrine/.gitkeep
+app/cache/twig/*
+!app/cache/twig/.gitkeep
+
 .env
