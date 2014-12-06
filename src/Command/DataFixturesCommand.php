@@ -37,7 +37,7 @@ class DataFixturesCommand extends ContainerAwareCommand
         $loader->addFixture(new LoadUserData());
 
         $helper = $this->getHelper('question');
-        $question = new ConfirmationQuestion('This will purge your database. Continue? y/N ', false);
+        $question = new ConfirmationQuestion('<fg=black;bg=yellow>This will purge your database. Continue? y/N </fg=black;bg=yellow>', false);
         if (! $helper->ask($input, $output, $question)) {
             return;
         }

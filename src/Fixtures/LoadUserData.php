@@ -13,15 +13,23 @@ class LoadUserData implements FixtureInterface
         $users = [];
 
         $user = new User();
-        $user->setUsername('admin');
-        $user->setPassword('5FZ2Z8QIkA7UTZ4BYkoC+GsReLf569mSKDsfods6LYQ8t+a8EW9oaircfMpmaLbPBh4FOBiiFyLfuZmTSUwzZg==');
-        $user->setRoles('ROLE_ADMIN');
+        $user->setEmail('admin@emptydocument.com');
+        $user->setPassword('wqOlwzRAUF0cBE43flE0x/qlxLESCkFSw01fBXsSdTAmG35KpLtHbEWKXvRghFC8CbQ/30wLRM2qxkzTCEHOsA==');
+        $user->setSalt('kmx2m130deokg84s4owg08wg0cckgoc');
+        $user->setRoles('ROLE_USER,ROLE_ADMIN');
+        $user->setName('admin');
+        $user->setTimeCreated(1417202554);
+        $user->setIsEnabled(1);
         $users[] = $user;
 
         $user = new User();
-        $user->setUsername('edwin');
-        $user->setPassword('5FZ2Z8QIkA7UTZ4BYkoC+GsReLf569mSKDsfods6LYQ8t+a8EW9oaircfMpmaLbPBh4FOBiiFyLfuZmTSUwzZg==');
+        $user->setEmail('edwin@emptydocument.com');
+        $user->setPassword('wqOlwzRAUF0cBE43flE0x/qlxLESCkFSw01fBXsSdTAmG35KpLtHbEWKXvRghFC8CbQ/30wLRM2qxkzTCEHOsA==');
+        $user->setSalt('kmx2m130deokg84s4owg08wg0cckgoc');
         $user->setRoles('ROLE_USER');
+        $user->setName('edwin');
+        $user->setTimeCreated(1417202554);
+        $user->setIsEnabled(1);
         $users[] = $user;
 
         foreach ($users as $user) {

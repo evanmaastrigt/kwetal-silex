@@ -1,5 +1,4 @@
 <?php
-
 $app->register(
     new Silex\Provider\TwigServiceProvider(),
     ['twig.path' => realpath(__DIR__ . '/../../src/Resource/view'),
@@ -9,6 +8,6 @@ $app->register(
             'debug' => true,
         ]
     ]);
-
 $app['twig.loader.filesystem']->addPath(realpath(__DIR__ . '/../../../src/Resource/view/frontend'), 'twigFrontendTemplates');
 $app['twig.loader.filesystem']->addPath(realpath(__DIR__ . '/../../../src/Resource/view/backend'), 'twigBackendTemplates');
+
